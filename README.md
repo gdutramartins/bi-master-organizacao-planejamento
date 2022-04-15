@@ -126,7 +126,7 @@ Impossível encontrar a solução somente com opções randômicas, as combinaç
 - Não pode existir bloqueio para o primeiro dia do ano (01/01) ou para o último (31/12).
 - Não foi testada com períodos superiores a 12 meses.
 - Não foi tratado o caso de um funcionário entrar durante o ano. <br/>
-  -  que nesse caso deveria ser adicionada a média de horas trabalhadas até a data do seu ingresso na equipe, contudo esse problema não foi abordado.
+  -  Uma opção nesse caso seria adicionadar a média de horas trabalhadas até a data do seu ingresso na equipe, contudo esse problema não foi abordado.
 
 
 <br/><br/>
