@@ -31,6 +31,28 @@ class Escala{
  termino: datetime
  eh_data_bloqueada: bool
  marcado_otimizacao: bool
+ 
+ get_csv_header() str
+ get_csv_row(self) List~str~
 }
 Escala --> Funcionario: responsavel
+
+class SobreAvisoUtil {
+ carrega_funcionarios(path: str) List~Funcionario~
+ carrega_bloqueios(path: str, equipe: List~Funcionario~)  List~Funcionario~
+}
+
+class Sobreaviso{
+ escala_inclui_dias_uteis: bool
+ hora_inicio: int
+ hora_fim: int
+ hora_troca_dias_nao_uteis: int
+ qtd_dias_pares: int      
+ 
+ carrega_arquivos_controle(path_arquivo_funcionarios: str, path_arquivo_bloqueios: str) void
+ salva_para_arquivo(path) void
+ carrega_de_arquivo(path: str) void
+ monta_escala(ano: int) void
+}
+Escala --o Sobreaviso: escala_equipe
 ```
